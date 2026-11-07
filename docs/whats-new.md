@@ -4,11 +4,18 @@ This page contains highlights of each deck.gl release. Also check our [vis.gl bl
 
 ## Unreleased
 
+<<<<<<< HEAD
 ### ScreenGrid compute aggregation
 
 `ScreenGridLayer` can aggregate on WebGPU using an explicit `colorDomain`, with
 picking and extensions disabled. SUM, MEAN, MIN, MAX, and COUNT produce GPUVector
 outputs consumed directly by the cell layer. See [ScreenGridLayer](./api-reference/aggregation-layers/screen-grid-layer.md#compute-aggregation).
+=======
+### Heatmap GPU column inputs
+
+HeatmapLayer accepts borrowed position and weight GPUVectors on WebGPU, including strided columns and shorter row prefixes.
+
+>>>>>>> c5d050bfef (Support borrowed GPUVector inputs in HeatmapLayer)
 
 ### Custom aggregators and GPUVector inputs
 
